@@ -1,1 +1,1 @@
-web: gunicorn expense.wsgi --log-file -
+waitress-serve --listen=*:8000 myapp.wsgi:application
